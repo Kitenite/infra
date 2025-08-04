@@ -57,7 +57,7 @@ const (
 	SandboxDiskUsedGaugeName  GaugeIntType = "e2b.sandbox.disk.used"
 	SandboxDiskTotalGaugeName GaugeIntType = "e2b.sandbox.disk.total"
 
-	TeamSandboxMaxGaugeName GaugeIntType = "e2b.team.sandbox.max"
+	TeamSandboxMaxGaugeName GaugeIntType = "e2b.team.sandbox.max_concurrent"
 )
 
 var counterDesc = map[CounterType]string{
