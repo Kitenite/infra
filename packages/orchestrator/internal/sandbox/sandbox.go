@@ -98,11 +98,11 @@ type Sandbox struct {
 	APIStoredConfig *orchestrator.SandboxConfig
 }
 
-func (m *Sandbox) LoggerMetadata() sbxlogger.SandboxMetadata {
+func (s *Sandbox) LoggerMetadata() sbxlogger.SandboxMetadata {
 	return sbxlogger.SandboxMetadata{
-		SandboxID:  m.Runtime.SandboxID,
-		TemplateID: m.Template.Files().TemplateID,
-		TeamID:     m.Runtime.TeamID,
+		SandboxID:  s.Runtime.SandboxID,
+		TemplateID: s.Template.Files().TemplateID,
+		TeamID:     s.Runtime.TeamID,
 	}
 }
 
